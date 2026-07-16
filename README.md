@@ -2,7 +2,7 @@
 
 Official website for **HM Security** — a licensed and insured security company serving the Greater Toronto Area (GTA).
 
-**Services:** Security Guards · Mobile Patrol & Alarm Response · Event Security · Concierge, Condo & CCTV
+**Services:** Networking Setup · Alarm System Installation · Speaker Installation · Surveillance Cameras · Access Control
 
 ## Contact
 - Phone: 437 997 6310
@@ -13,11 +13,16 @@ Official website for **HM Security** — a licensed and insured security company
 Static multi-page website (HTML + CSS + vanilla JS). No build step — open `index.html` in a browser, or host the folder on any static host (Netlify, cPanel, GoDaddy).
 
 ```
-index.html        Home
-services.html     Services
-industries.html   Industries served
-about.html        About + owners
-contact.html      Contact form, details, GTA map
+index.html                      Home
+services.html                   Services hub
+networking-setup.html           Service page
+alarm-system-installation.html  Service page
+speaker-installation.html       Service page
+surveillance-cameras.html       Service page
+access-control.html             Service page
+industries.html                 Industries served
+about.html                      About + owners
+contact.html                    Contact form, details, GTA map
 assets/css/style.css
 assets/js/main.js
 ```

@@ -267,6 +267,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .svc-card p { color: rgba(232,238,246,0.82); margin: 10px 0 16px; font-size: 0.96rem; }
 .svc-card__link { display: inline-flex; align-items: center; gap: 8px; color: var(--gold); font-family: var(--font-head); font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.04em; }
 .svc-card__link svg { width: 16px; height: 16px; transition: transform 0.25s var(--ease); }
+.svc-duration { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-head); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--gold); background: var(--gold-soft); border: 1px solid rgba(200,162,75,0.4); padding: 5px 12px; border-radius: 100px; margin-bottom: 16px; }
+.svc-duration svg { width: 15px; height: 15px; }
 .svc-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
 .svc-card:hover .svc-card__img img { transform: scale(1.06); }
 .svc-card:hover .svc-card__link svg { transform: translateX(5px); }
