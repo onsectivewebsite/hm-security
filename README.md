@@ -1,12 +1,13 @@
-# HM Security
+# HM Security Solutions
 
-Official website for **HM Security** — a licensed and insured security company serving the Greater Toronto Area (GTA).
+Official website for **HM Security Solutions** — a licensed and insured security company serving the Greater Toronto Area (GTA).
 
 **Services:** Networking Setup · Alarm System Installation · Speaker Installation · Surveillance Cameras · Access Control
 
 ## Contact
-- Phone: 437 997 6310
+- Phone: (437) 997-6310
 - Email: info@hmsecurity.ca
+- Address: 3 Hidden Peak Dr, Brampton, ON L6R 3G6
 - Owners: Maninderbir Singh & Harinder Singh
 
 ## About this site
