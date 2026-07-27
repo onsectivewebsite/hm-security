@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://images.unsplash.com" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script>try{var t=localStorage.getItem("hmTheme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
   <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 <body>
@@ -41,17 +42,40 @@
 
   <main id="main">
     <section class="hero">
-      <div class="hero__bg">
-        <img src="https://images.unsplash.com/photo-1549109926-58f039549485?w=1800&q=80" alt="Professionally installed surveillance camera" fetchpriority="high" />
-      </div>
-      <div class="container hero__inner">
-        <span class="hero__badge"><span class="dot"></span> <b>Licensed &amp; Insured</b> — Serving the Greater Toronto Area</span>
-        <h1>See More. <span class="gold">Worry Less.</span></h1>
-        <p class="hero__sub">HM Security Solutions designs and installs surveillance cameras, alarm systems, networking, audio and access control across the GTA — a locally owned, licensed team protecting your home and business with expert, clean workmanship and support that lasts.</p>
-        <div class="hero__actions">
-          <a class="btn btn--primary btn--lg" href="contact.html">Get a Free Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          <a class="btn btn--ghost btn--lg" href="services.html">Our Services</a>
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <span class="hero__badge"><span class="dot"></span> <b>Licensed &amp; Insured</b> — Serving the Greater Toronto Area</span>
+            <h1>See More. <span class="gold">Worry Less.</span></h1>
+            <p class="hero__sub">HM Security Solutions designs and installs surveillance cameras, alarm systems, networking, audio and access control across the GTA — protecting your home and business with expert, clean workmanship.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary btn--lg" href="contact.html">Get a Free Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a class="btn btn--ghost btn--lg" href="services.html">Our Services</a>
+            </div>
+            <ul class="hero__points">
+              <li class="hero__point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Certified technicians</li>
+              <li class="hero__point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Free on-site quotes</li>
+              <li class="hero__point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> GTA-wide coverage</li>
+            </ul>
+          </div>
+
+          <div class="hero__visual">
+            <div class="hero__rating">
+              <span class="stars">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.5 6.9L12 17.8 5.2 21l1.5-6.9L1.5 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.5 6.9L12 17.8 5.2 21l1.5-6.9L1.5 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.5 6.9L12 17.8 5.2 21l1.5-6.9L1.5 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.5 6.9L12 17.8 5.2 21l1.5-6.9L1.5 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.5 6.9L12 17.8 5.2 21l1.5-6.9L1.5 9.3l7-.8z"/></svg>
+              </span>
+              Trusted in the GTA
+            </div>
+            <div class="hero__media">
+              <img src="https://images.unsplash.com/photo-1549109926-58f039549485?w=1000&q=80" alt="Professionally installed surveillance camera" fetchpriority="high" />
+            </div>
+            <div class="hero__float">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z" stroke-linejoin="round"/><circle cx="12" cy="12" r="3"/></svg></div>
+              <div><div class="t">Live Monitoring</div><div class="s">Watch from anywhere, 24/7</div></div>
+            </div>
+          </div>
         </div>
+
         <div class="hero__stats">
           <div class="hero__stat"><div class="num"><span data-count="5">0</span></div><div class="label">Core Services</div></div>
           <div class="hero__stat"><div class="num"><span data-count="100">0</span><span class="gold">%</span></div><div class="label">Licensed &amp; Insured</div></div>

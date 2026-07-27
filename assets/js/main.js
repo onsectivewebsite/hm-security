@@ -123,4 +123,44 @@
   /* ---- Footer year ---- */
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ---- Theme switcher (persists across pages via localStorage) ---- */
+  (function () {
+    var THEMES = ['gold', 'blue', 'red'];
+    var MARK = { gold: 'logo-mark.png', blue: 'logo-mark-blue.png', red: 'logo-mark-red.png' };
+    var LABEL = { gold: 'Navy & Gold', blue: 'Charcoal & Blue', red: 'Graphite & Red' };
+    var root = document.documentElement;
+
+    function read() { try { return localStorage.getItem('hmTheme') || 'gold'; } catch (e) { return 'gold'; } }
+
+    function apply(t) {
+      if (THEMES.indexOf(t) < 0) t = 'gold';
+      root.setAttribute('data-theme', t);
+      document.querySelectorAll('img.brand__mark').forEach(function (img) { img.src = MARK[t]; });
+      try { localStorage.setItem('hmTheme', t); } catch (e) {}
+      document.querySelectorAll('.theme-switch__opt').forEach(function (b) {
+        b.setAttribute('aria-pressed', b.getAttribute('data-theme') === t ? 'true' : 'false');
+      });
+    }
+
+    var wrap = document.createElement('div');
+    wrap.className = 'theme-switch';
+    var opts = THEMES.map(function (t) {
+      return '<button class="theme-switch__opt" data-theme="' + t + '" aria-pressed="false"><span class="sw sw-' + t + '"></span>' + LABEL[t] + '</button>';
+    }).join('');
+    wrap.innerHTML =
+      '<button class="theme-switch__toggle" aria-label="Change colour theme" title="Change colour theme">' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="13.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="10.5" r="1.5"/><circle cx="8.5" cy="7.5" r="1.5"/><circle cx="6.5" cy="12.5" r="1.5"/><path d="M12 22a10 10 0 1 1 0-20c5.52 0 10 3.58 10 8 0 2.76-2.24 4-4 4h-1.6a1.9 1.9 0 0 0-1.4 3.18A1.9 1.9 0 0 1 13.6 22H12z" stroke-linejoin="round"/></svg>' +
+      '</button>' +
+      '<div class="theme-switch__panel"><span class="theme-switch__title">Colour theme</span>' + opts + '</div>';
+    document.body.appendChild(wrap);
+
+    wrap.querySelector('.theme-switch__toggle').addEventListener('click', function () { wrap.classList.toggle('open'); });
+    wrap.querySelectorAll('.theme-switch__opt').forEach(function (b) {
+      b.addEventListener('click', function () { apply(b.getAttribute('data-theme')); wrap.classList.remove('open'); });
+    });
+    document.addEventListener('click', function (e) { if (!wrap.contains(e.target)) wrap.classList.remove('open'); });
+
+    apply(read());
+  })();
 })();
