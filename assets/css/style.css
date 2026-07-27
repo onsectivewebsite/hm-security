@@ -224,7 +224,7 @@ img.brand__mark { filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35)); }
 }
 .hero__badge b { color: var(--white); }
 .hero__badge .dot { width: 8px; height: 8px; border-radius: 50%; background: #35d07f; box-shadow: 0 0 0 4px rgba(53,208,127,0.2); }
-.hero__slogan { display: block; font-family: var(--font-head); font-weight: 700; color: var(--gold); letter-spacing: 0.16em; text-transform: uppercase; font-size: 1rem; margin-bottom: 12px; }
+.hero__slogan { display: block; font-family: var(--font-head); font-weight: 700; color: var(--gold); letter-spacing: 0.16em; text-transform: uppercase; font-size: 1rem; margin-top: 16px; }
 .hero h1 { font-size: clamp(1.95rem, 4.1vw, 3.4rem); text-transform: uppercase; letter-spacing: -0.01em; }
 .hero h1 .gold { display: block; }
 .hero__sub { font-size: clamp(1.02rem, 1.55vw, 1.2rem); color: rgba(232,238,246,0.9); margin: 22px 0 30px; max-width: 52ch; }
