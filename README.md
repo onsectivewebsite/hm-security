@@ -7,7 +7,7 @@ Official website for **HM Security Solutions** — a licensed and insured securi
 ## Contact
 - Phone: (437) 997-6310
 - Email: info@hmsecurity.ca
-- Address: 3 Hidden Peak Dr, Brampton, ON L6R 3G6
+- Address: 24 Newport St, Brampton, ON L6S 4M1
 - Owners: Maninderbir Singh & Harinder Singh
 
 ## About this site
