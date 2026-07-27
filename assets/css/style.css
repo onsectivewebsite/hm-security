@@ -204,9 +204,10 @@ img.brand__mark { filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35)); }
    ========================================================================= */
 .hero {
   position: relative; overflow: hidden; color: var(--white);
-  padding: calc(var(--header-h) + 60px) 0 58px;
+  padding: calc(var(--header-h) + 30px) 0 54px;
   background: linear-gradient(165deg, var(--navy-850) 0%, var(--navy-950) 100%);
 }
+.hero__badge-loc-sm { display: none; }
 .hero::before {
   content: ""; position: absolute; top: -30%; right: -14%; width: 68%; height: 140%; z-index: 0;
   background: radial-gradient(closest-side, var(--gold-soft), transparent 72%); pointer-events: none;
@@ -267,8 +268,10 @@ img.brand__mark { filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35)); }
   .hero::before { width: 110%; }
 }
 @media (max-width: 560px) {
+  .hero { padding-top: calc(var(--header-h) + 20px); }
   .hero__badge { align-items: center; }
   .hero__badge-loc { display: none; }
+  .hero__badge-loc-sm { display: inline; }
   .hero__float { left: 10px; padding: 12px 14px; gap: 11px; }
   .hero__float .ic { width: 40px; height: 40px; }
   .hero__rating { right: 8px; top: 12px; }
