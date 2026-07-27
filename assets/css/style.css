@@ -267,6 +267,8 @@ img.brand__mark { filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35)); }
   .hero::before { width: 110%; }
 }
 @media (max-width: 560px) {
+  .hero__badge { align-items: center; }
+  .hero__badge-loc { display: none; }
   .hero__float { left: 10px; padding: 12px 14px; gap: 11px; }
   .hero__float .ic { width: 40px; height: 40px; }
   .hero__rating { right: 8px; top: 12px; }
